@@ -13,6 +13,8 @@ const config: Config = {
       },
       colors: {
         primary: '#1777E9',
+        textPrimary: '#383A42',
+        textSecondary: '#595959',
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },

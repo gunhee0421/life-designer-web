@@ -10,32 +10,44 @@ export default function Home() {
         <Icon name="hambuger" />
       </header>
 
-      <section>
-        <div>
-          <h1>당신만의 루틴으로</h1>
-          <h1>더 나은 삶을 디자인하세요</h1>
-          <p>라디와 함께 간편하게 목표를 설정하고 습관을 만들어보세요</p>
+      <section className="px-8 py-14 text-center">
+        <div className="mb-5">
+          <h1 className="text-textPrimary text-2xl font-bold">
+            당신만의 루틴으로
+          </h1>
+          <h1 className="text-textPrimary mb-2 text-2xl font-bold">
+            더 나은 삶을 디자인하세요
+          </h1>
+          <p className="text-textSecondary text-xs">
+            라디와 함께 간편하게 목표를 설정하고 습관을 만들어보세요
+          </p>
         </div>
-        <div>
-          <p>지금 시작하기</p>
+
+        <div className="bg-primary mb-20 inline-flex w-auto gap-2 rounded-md px-4 py-2">
+          <p className="font-semibold text-white">지금 시작하기</p>
           <Icon name="arrowNavigate" />
         </div>
-        <Image src={heroSection} alt="woman yoga with routine app" />
-        <div>
-          <div>
-            <Icon name="playstore" />
-            <div>
+
+        <Image
+          src={heroSection}
+          alt="woman yoga with routine app"
+          className="mb-12"
+        />
+
+        <div className="inline-flex flex-row gap-4">
+          <div className="inline-flex items-center gap-2 rounded-md bg-black px-2 py-1 text-start">
+            <Icon name="playstore" size={32} />
+            <div className="text-white">
               <p>Google Play에서</p>
-              <p>다운로드</p>
+              <p className="text-sm">다운로드</p>
             </div>
           </div>
-        </div>
-        <div>
-          <div>
-            <Icon name="apple" />
-            <div>
-              <p>App Store에서</p>
-              <p>다운로드</p>
+
+          <div className="inline-flex items-center gap-2 rounded-md bg-black px-2 py-1 text-start">
+            <Icon name="apple" size={32} />
+            <div className="text-white">
+              <p>Apple Store에서</p>
+              <p className="text-sm">다운로드</p>
             </div>
           </div>
         </div>
