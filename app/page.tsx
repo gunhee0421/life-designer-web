@@ -53,31 +53,34 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="bg-[#f9f9f9] px-6 py-10 text-center">
         <div>
-          <h1>About 라디</h1>
-          <p>
+          <h1 className="text-textPrimary mb-4 text-2xl font-bold">
+            About 라디
+          </h1>
+          <p className="text-textSecondary text-lg">
             라디는 AI를 활용하여 번거로운 조작 없이도 당신에게 맞는 루틴을
             찾아드립니다.
           </p>
         </div>
-        <div>
-          <div>
-            <Icon name="arrowTarget" size={52} />
-            <p>내 목표에 맞는</p>
-            <p>맞춤 루틴 생성</p>
+
+        <div className="flex items-center gap-2 space-x-4 overflow-x-auto p-5 pb-12 text-start">
+          <div className="min-w-[200px] rounded-md bg-white p-7 pt-16 shadow-md">
+            <Icon className="mb-4" name="arrowTarget" size={52} />
+            <p className="font-bold text-[#5c5c5c]">내 목표에 맞는</p>
+            <p className="font-bold text-[#5c5c5c]">맞춤 루틴 생성</p>
           </div>
           <Icon name="arrowContinue" />
-          <div>
-            <Icon name="growthChart" size={52} />
-            <p>내 목표에 맞는</p>
-            <p>맞춤 루틴 생성</p>
+          <div className="min-w-[200px] rounded-md bg-white p-7 pt-16 shadow-md">
+            <Icon className="mb-4" name="growthChart" size={52} />
+            <p className="font-bold text-[#5c5c5c]">루틴 수행을 통한</p>
+            <p className="font-bold text-[#5c5c5c]">습관 형성</p>
           </div>
           <Icon name="arrowContinue" />
-          <div>
-            <Icon name="growthPlant" size={52} />
-            <p>내 목표에 맞는</p>
-            <p>맞춤 루틴 생성</p>
+          <div className="min-w-[200px] rounded-md bg-white p-7 pt-16 shadow-md">
+            <Icon className="mb-4" name="growthPlant" size={52} />
+            <p className="font-bold text-[#5c5c5c]">나에게 맞는</p>
+            <p className="font-bold text-[#5c5c5c]">갓생 살기!</p>
           </div>
         </div>
       </section>

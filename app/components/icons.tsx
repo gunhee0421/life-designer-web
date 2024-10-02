@@ -4,6 +4,7 @@ interface iconType {
   name: keyof typeof icons
   size?: number
   color?: string
+  className?: string
 }
 
 const icons = {
@@ -178,11 +179,14 @@ const icons = {
   ),
 }
 
-const Icon = ({ name, size = 24, color }: iconType) => {
+const Icon = ({ name, size = 24, color, className }: iconType) => {
   const icon = icons[name]
 
   return (
-    <div style={{ width: size, height: size, fill: color }}>
+    <div
+      style={{ width: size, height: size, fill: color }}
+      className={`${className}`}
+    >
       {icon
         ? React.cloneElement(icon, { width: size, height: size, stroke: color })
         : null}
