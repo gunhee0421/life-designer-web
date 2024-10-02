@@ -8,7 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-pretendard)', 'sans-serif'],
+      },
       colors: {
+        primary: '#1777E9',
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },
