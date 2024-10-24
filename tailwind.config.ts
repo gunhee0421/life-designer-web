@@ -10,13 +10,16 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-pretendard)', 'sans-serif'],
+        notoSans: ['NotoSansKR', 'sans-serif'],
       },
       colors: {
         primary: '#1777E9',
         textPrimary: '#383A42',
         textSecondary: '#595959',
+        textSub: '#909090',
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        gray: '#F9FAFB',
       },
     },
   },
