@@ -184,6 +184,46 @@ const icons = {
       />
     </svg>
   ),
+  phoneArrow: (
+    <svg
+      width="8"
+      height="12"
+      viewBox="0 0 8 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.87473 0.355774L0.552856 1.67765L4.84661 5.98077L0.552856 10.2839L1.87473 11.6058L7.49973 5.98077L1.87473 0.355774Z"
+        fill="#D9D9D9"
+      />
+    </svg>
+  ),
+  close: (
+    <svg
+      width="33"
+      height="32"
+      viewBox="0 0 33 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_670_4489)">
+        <path
+          d="M25.5865 8.58987L23.7562 6.75958L16.5 14.0158L9.24374 6.75958L7.41345 8.58987L14.6697 15.8461L7.41345 23.1024L9.24374 24.9327L16.5 17.6764L23.7562 24.9327L25.5865 23.1024L18.3303 15.8461L25.5865 8.58987Z"
+          fill="black"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_670_4489">
+          <rect
+            width="31.1538"
+            height="31.1538"
+            fill="white"
+            transform="translate(0.923096 0.269196)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  ),
 }
 
 const Icon = ({ name, size = 24, color, className }: iconType) => {

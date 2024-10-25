@@ -4,7 +4,7 @@ const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx,css}',
   ],
   theme: {
     extend: {
@@ -20,6 +20,7 @@ const config: Config = {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         gray: '#F9FAFB',
+        backgroundGray: '#f4f4f4',
       },
     },
   },
