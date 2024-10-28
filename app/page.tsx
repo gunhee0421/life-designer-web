@@ -1,7 +1,11 @@
-import Icon from './components/icons'
 import {
+  EndIntroduction,
+  SectionEight,
+  SectionFive,
   SectionFour,
   SectionOne,
+  SectionSeven,
+  SectionSix,
   SectionThree,
   SectionTwo,
 } from './components/Section'
@@ -13,6 +17,11 @@ export default function Home() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFive />
+      <SectionSix />
+      <SectionSeven />
+      <SectionEight />
+      <EndIntroduction />
     </div>
   )
 }
