@@ -3,7 +3,12 @@ import heroSection from '../../public/hero_section.png'
 import Image from 'next/image'
 import '../styles/phone.css'
 import CircularProgress from './CircularPrograss'
-import { BetaTestCard } from './Card'
+import EmblaCarousel from './Carousel'
+import {
+  SectionAnimationContainer,
+  SectionAnimationLongContainer,
+} from './SectionAnimationContainer'
+import React from 'react'
 
 const calendar = [
   [null, 1, 1, 2, 2, 2, 1],
@@ -97,7 +102,7 @@ export const Main = () => {
 
 export const MainTwo = () => {
   return (
-    <section className="flex flex-col rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] font-notoSans md:w-[27.225vw] md:rounded-[26px] md:border-[0.75rem]">
+    <section className="flex flex-col rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] font-notoSans md:w-[30vw] md:min-w-[27.5vw] md:rounded-[26px] md:border-[0.75rem]">
       <nav className="mx-[1.125rem] my-3 flex flex-row items-center justify-between md:mx-[2.125rem] md:my-[1.5rem]">
         <Icon name="arrowNavigate" className="md:hidden" size={22.5} />
         <Icon name="arrowNavigate" className="hidden md:block" size={44} />
@@ -156,7 +161,7 @@ export const MainTwo = () => {
 // section three의 메인화면
 export const MainThree = () => {
   return (
-    <section className="flex flex-col gap-3 rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] px-[1.125rem] pt-3 font-notoSans md:w-[27.5vw] md:rounded-[26px] md:border-[0.75rem] md:px-8 md:pt-6">
+    <section className="flex flex-col gap-3 rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] px-[1.125rem] pt-3 font-notoSans md:min-w-[27.5vw] md:rounded-[26px] md:border-[0.75rem] md:px-8 md:pt-6">
       <section className="flex flex-col gap-[1.125rem] py-[1.125rem] md:gap-[2.175rem]">
         <h1 className="text-[1rem] font-bold md:text-[1.75rem]">
           꾸준히 운동하기
@@ -266,7 +271,7 @@ export const MainThree = () => {
 // section four의 메인화면
 export const MainFour = () => {
   return (
-    <section className="flex h-fit w-full flex-col rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] font-notoSans md:w-[27.225vw] md:rounded-[26px] md:border-[0.75rem]">
+    <section className="flex h-fit w-full flex-col rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] font-notoSans md:min-w-[27.225vw] md:rounded-[26px] md:border-[0.75rem]">
       <nav className="mx-6 my-4 flex flex-row items-center justify-between md:mx-12 md:my-8">
         <Icon name="arrowNavigate" className="opacity-0" size={22.5} />
         <Icon name="close" size={22.5} className="md:hidden" />
@@ -338,9 +343,11 @@ export const MainFour = () => {
   )
 }
 // sectionFive의 메인화면
-export const MainFive = () => {
+export const MainFive: React.FC<{
+  setShowSix: React.Dispatch<React.SetStateAction<boolean>>
+}> = ({ setShowSix }) => {
   return (
-    <section className="flex h-fit w-full flex-col rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] py-6 font-notoSans md:w-[27.225vw] md:rounded-[26px] md:border-[0.75rem]">
+    <section className="md:scrollbar-hidden md:scrollbar-hide flex h-fit w-full flex-col rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] py-6 font-notoSans md:max-h-screen md:overflow-y-auto md:rounded-[26px] md:border-[0.75rem]">
       <nav className="flex flex-col items-center justify-center">
         <h1 className="mx-6 flex h-9 items-center text-xs font-semibold md:h-16 md:text-2xl">
           통계
@@ -440,7 +447,13 @@ export const MainFive = () => {
         />
       </footer>
       <section className="hidden md:flex">
-        <MainSix />
+        <SectionAnimationLongContainer
+          delay={100}
+          threshold={0.1}
+          nextAnimation={setShowSix}
+        >
+          <MainSix />
+        </SectionAnimationLongContainer>
       </section>
     </section>
   )
@@ -584,8 +597,8 @@ export const MainSix = () => {
 // sectionEight의 메인화면
 export const MainEight = () => {
   return (
-    <section className="px-[2.75rem] md:px-[10rem] md:py-[4.5rem]">
-      <BetaTestCard />
+    <section className="px-[0.75rem] md:px-[11rem]">
+      <EmblaCarousel />
     </section>
   )
 }

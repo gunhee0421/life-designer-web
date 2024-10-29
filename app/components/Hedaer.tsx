@@ -27,7 +27,7 @@ export const Header = () => {
 // sectionTwo의 헤더
 export const HeaderTwo = () => {
   return (
-    <header>
+    <header className="animate-fadeIn">
       <div className="flex flex-col gap-2 font-sans md:flex-1">
         <h1 className="text text-xl font-bold text-primary md:text-4xl">
           루틴 생성

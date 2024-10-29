@@ -22,8 +22,21 @@ const config: Config = {
         gray: '#F9FAFB',
         backgroundGray: '#f4f4f4',
       },
+      boxShadow: {
+        cardMobile: '0px 4px 4px 0px rgb(0,0,0,0.25)',
+        cardWeb: '0px 8px 8px 0px rgb(0,0,0,0.25)',
+      },
+      keyframes: {
+        fadein: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' }, // 시작 위치와 투명도
+          '100%': { transform: 'translateY(0)', opacity: '1' }, // 끝 위치와 투명도
+        },
+      },
+      animation: {
+        fadeIn: 'fadein 1s ease-in-out',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 }
 export default config

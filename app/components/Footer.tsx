@@ -84,12 +84,12 @@ export const IntroFooter = () => {
         나만의 Life Designer: 라디
       </h1>
       <div className="flex flex-col gap-10 md:flex-row md:gap-60 md:text-[0.875rem]">
-        <h2 className="font-[0.625rem]">
+        <h2 className="text-[0.625rem]">
           대표: 신홍기
           <br />
           이메일: life.designer.dev@gmail.com
         </h2>
-        <h2 className="font-[0.625rem] underline">
+        <h2 className="text-[0.625rem] underline">
           서비스 이용약관 <br /> 개인정보 처리방침
         </h2>
       </div>
