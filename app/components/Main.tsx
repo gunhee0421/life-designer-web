@@ -1,5 +1,5 @@
 import Icon from './icons'
-import heroSection from '../../public/hero_section.png'
+import heroSection from '../../public/hero_section.webp'
 import Image from 'next/image'
 import '../styles/phone.css'
 import CircularProgress from './CircularPrograss'
@@ -20,13 +20,13 @@ const calendar = [
 
 export const Main = () => {
   return (
-    <section className="justify-center px-8 py-14 text-center md:mx-40 md:my-40 md:flex md:text-left">
+    <section className="flex h-full flex-col justify-between px-8 py-14 text-center md:mx-40 md:my-40 md:flex md:min-h-[70vh] md:text-left">
       <div className="flex flex-col">
         <header>
           <div className="mb-5">
-            <title className="text-2xl font-bold text-textPrimary md:h-[3.75rem] md:text-[3.5rem]">
+            <h1 className="text-2xl font-bold text-textPrimary md:h-[3.75rem] md:text-[3.5rem]">
               당신만의 루틴으로
-            </title>
+            </h1>
             <h2 className="mb-2 text-2xl font-bold text-textPrimary md:h-[3.75rem] md:text-[3.5rem]">
               더 나은 삶을 디자인하세요
             </h2>
@@ -38,7 +38,7 @@ export const Main = () => {
 
         <nav className="mb-10 hidden flex-row gap-4 md:flex">
           <a
-            className="inline-flex items-center gap-2 rounded-md bg-black px-4 py-2 text-start"
+            className="inline-flex items-center gap-2 rounded-md bg-black px-4 py-2 text-start md:w-48"
             href="https://play.google.com/store/apps/details?id=dorun.com.life_designer_client&pcampaignid=web_share"
           >
             <Icon name="playstore" size={32} />
@@ -47,7 +47,7 @@ export const Main = () => {
             </div>
           </a>
           <a
-            className="inline-flex items-center gap-2 rounded-md bg-black px-2 py-1 text-start"
+            className="inline-flex items-center gap-2 rounded-md bg-black px-4 py-2 text-start md:w-48"
             href="https://apps.apple.com/kr/app/%EB%9D%BC%EB%94%94-%EB%82%98%EB%A7%8C%EC%9D%98-life-designer/id6670728311"
           >
             <Icon name="apple" size={32} />
@@ -58,36 +58,30 @@ export const Main = () => {
         </nav>
       </div>
 
-      <div className="flex justify-center">
+      <div className="mb-28 mt-32 flex justify-center">
         <Image
           src={heroSection}
           width={251}
           height={175}
           alt="여자가 요가 앱을 사용하여 루틴을 관리하는 모습"
-          className="mb-24 mt-24 md:hidden"
-        />
-        <Image
-          src={heroSection}
-          width={980}
-          height={671}
-          alt="여자가 요가 앱을 사용하여 루틴을 관리하는 모습"
-          className="mb-12 hidden max-h-[671px] md:block"
+          className="md:absolute md:right-[5vw] md:top-[10vh] md:h-[350px] md:w-[502px] lg:right-[10vw] lg:top-[30vh] lg:h-[671px] lg:w-[980px]"
+          priority
         />
       </div>
 
-      <nav className="inline-flex flex-col gap-4 md:hidden">
+      <nav className="inline-flex flex-col items-center justify-center gap-4 md:hidden">
         <a
-          className="inline-flex items-center gap-2 rounded-md bg-black px-2 py-1 text-start"
+          className="inline-flex w-24 items-center gap-2 rounded bg-black px-2 py-1 text-start"
           href="https://play.google.com/store/apps/details?id=dorun.com.life_designer_client&pcampaignid=web_share"
         >
           <Icon name="playstore" size={16} />
-          <div className="text-white">
+          <div className="flex-1 text-white">
             <p className="text-[10px] font-medium">Google Play</p>
           </div>
         </a>
 
         <a
-          className="inline-flex items-center gap-2 rounded-md bg-black px-2 py-1 text-start"
+          className="inline-flex w-24 items-center gap-2 rounded bg-black px-2 py-1 text-start"
           href="https://apps.apple.com/kr/app/%EB%9D%BC%EB%94%94-%EB%82%98%EB%A7%8C%EC%9D%98-life-designer/id6670728311"
         >
           <Icon name="apple" size={16} />
@@ -347,7 +341,7 @@ export const MainFive: React.FC<{
   setShowSix: React.Dispatch<React.SetStateAction<boolean>>
 }> = ({ setShowSix }) => {
   return (
-    <section className="md:scrollbar-hidden md:scrollbar-hide flex h-fit w-full flex-col rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] py-6 font-notoSans md:max-h-screen md:overflow-y-auto md:rounded-[26px] md:border-[0.75rem]">
+    <section className="md:scrollbar-hidden flex h-fit w-full flex-col rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] py-6 font-notoSans md:rounded-[26px] md:border-[0.75rem] md:scrollbar-hide">
       <nav className="flex flex-col items-center justify-center">
         <h1 className="mx-6 flex h-9 items-center text-xs font-semibold md:h-16 md:text-2xl">
           통계

@@ -17,6 +17,7 @@ export const BetaTestCard = () => {
             width={72}
             height={81}
             className="md:hidden"
+            loading="lazy"
           />
           <Image
             src={'/study_ladi.gif'}
@@ -24,6 +25,7 @@ export const BetaTestCard = () => {
             width={340}
             height={382}
             className="hidden md:block"
+            loading="lazy"
           />
           <div className="text-[0.375rem] md:text-3xl">
             <h1 className="font-bold">진행중인 이벤트</h1>
@@ -55,6 +57,7 @@ export const IntroLadiCard = () => {
         width={270}
         height={150}
         className="w-full"
+        loading="lazy"
       />
     </section>
   )
