@@ -84,7 +84,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script_stop: true
           script: |
-            sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPONAME }}:latest
+            sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/life-designer-web:latest
             sudo docker-compose --env-file .env -f docker-compose-web.yml up -d
 
       - name: Check Deploy Server URL
