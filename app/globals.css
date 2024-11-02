@@ -27,7 +27,7 @@ body {
 }
 @font-face {
   font-family: 'NotoSansKR';
-  src: url('/app/fonts/NotoSansKR-Medium.ttf') format('truetype');
+  src: url('./fonts/NotoSansKR-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

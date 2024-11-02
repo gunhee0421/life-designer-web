@@ -46,7 +46,7 @@ export const SectionOne = () => {
 // section two
 export const SectionTwo = () => {
   return (
-    <section className="flex flex-col gap-6 bg-gray px-[2.7rem] py-[3.75rem] md:flex-row md:items-center md:justify-between md:px-[17.5rem] md:py-[13rem]">
+    <section className="flex flex-col gap-6 bg-gray px-[2.7rem] py-[3.75rem] lg:flex-row lg:items-center lg:justify-between lg:p-[5rem] 2xl:px-[17.5rem] 2xl:py-[13rem]">
       <Head>
         <title>라디 - 루틴 생성</title>
         <meta
@@ -74,7 +74,7 @@ export const SectionThree = () => {
           content="라디와 함께 더욱 세부적인 루틴을 설정해보세요."
         />
       </Head>
-      <div className="flex flex-col gap-6 px-[2.7rem] py-[3.75rem] md:hidden">
+      <div className="flex flex-col gap-6 px-[2.7rem] py-[3.75rem] lg:hidden">
         <SectionAnimationContainer>
           <HederThree />
         </SectionAnimationContainer>
@@ -85,7 +85,7 @@ export const SectionThree = () => {
           <FooterThree />
         </SectionAnimationContainer>
       </div>
-      <div className="hidden md:flex md:flex-row md:items-center md:justify-between md:px-[17.5rem] md:py-[13rem]">
+      <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-between lg:p-[5rem] 2xl:px-[17.5rem] 2xl:py-[13rem]">
         <SectionAnimationContainer>
           <MainThree />
         </SectionAnimationContainer>
@@ -104,7 +104,7 @@ export const SectionThree = () => {
 // section Four
 export const SectionFour = () => {
   return (
-    <section className="flex flex-col gap-6 bg-gray px-[2.7rem] py-[3.75rem] md:flex-row md:items-center md:justify-between md:px-[17.5rem] md:py-[13rem]">
+    <section className="flex flex-col gap-6 bg-gray px-[2.7rem] py-[3.75rem] lg:flex-row lg:items-center lg:justify-between 2xl:px-[17.5rem] 2xl:py-[13rem]">
       <Head>
         <title>라디 - 루틴 수행</title>
         <meta
@@ -127,7 +127,7 @@ export const SectionFive = () => {
 
   return (
     <section>
-      <div className="flex h-fit flex-col gap-6 px-[2.7rem] py-[3.75rem] md:hidden md:flex-row md:items-center md:justify-between md:px-[17.5rem] md:py-[13rem]">
+      <div className="flex h-fit flex-col gap-6 px-[2.7rem] py-[3.75rem] lg:hidden">
         <SectionAnimationContainer>
           <HeaderFive />
         </SectionAnimationContainer>
@@ -138,7 +138,7 @@ export const SectionFive = () => {
           <FooterFive />
         </SectionAnimationContainer>
       </div>
-      <div className="hidden h-fit gap-6 px-[2.7rem] py-[3.75rem] md:flex md:flex-row md:items-center md:justify-between md:px-[17.5rem] md:py-[13rem]">
+      <div className="hidden h-fit gap-6 px-[2.7rem] py-[3.75rem] lg:flex lg:flex-row lg:items-center lg:justify-between 2xl:px-[17.5rem] 2xl:py-[13rem]">
         <div className="flex h-full flex-1">
           <SectionAnimationContainer threshold={0.1}>
             <MainFive setShowSix={setShowSix} />
@@ -177,7 +177,7 @@ export const SectionFive = () => {
 //           content="라디가 제공하는 루틴 수행 통계를 확인해보세요."
 //         />
 //       </Head>
-//       <div className="flex h-fit flex-col gap-6 px-[2.7rem] py-[3.75rem] md:hidden md:flex-row md:items-center md:justify-between md:px-[17.5rem] md:py-[13rem]">
+//       <div className="flex h-fit flex-col gap-6 px-[2.7rem] py-[3.75rem] lg:hidden lg:flex-row lg:items-center lg:justify-between lg:px-[17.5rem] lg:py-[13rem]">
 //         <SectionAnimationContainer>
 //           <HeaderFive />
 //         </SectionAnimationContainer>
@@ -188,7 +188,7 @@ export const SectionFive = () => {
 //           <FooterFive />
 //         </SectionAnimationContainer>
 //       </div>
-//       <div className="hidden h-fit gap-6 px-[2.7rem] py-[3.75rem] md:flex md:flex-row md:items-center md:justify-between md:px-[17.5rem] md:py-[13rem]">
+//       <div className="hidden h-fit gap-6 px-[2.7rem] py-[3.75rem] lg:flex lg:flex-row lg:items-center lg:justify-between lg:px-[17.5rem] lg:py-[13rem]">
 //         <div className="flex h-full flex-1">
 //           <SectionAnimationContainer threshold={0.1}>
 //             <MainFive setShowSix={setShowSix} />
@@ -220,7 +220,7 @@ export const SectionFive = () => {
 // section Six(Mobile)
 export const SectionSix = () => {
   return (
-    <section className="flex flex-col gap-6 px-[2.7rem] py-[3.75rem] md:hidden md:flex-row md:items-center md:justify-between md:px-[17.5rem] md:py-[13rem]">
+    <section className="flex flex-col gap-6 px-[2.7rem] py-[3.75rem] lg:hidden lg:flex-row lg:items-center lg:justify-between lg:px-[17.5rem] lg:py-[13rem]">
       <Head>
         <title>라디 - 루틴 보고서</title>
         <meta
@@ -240,7 +240,7 @@ export const SectionSix = () => {
 // section Seven
 export const SectionSeven = () => {
   return (
-    <section className="flex items-center bg-backgroundGray md:justify-between md:px-[10rem] md:py-[13rem]">
+    <section className="flex items-center bg-backgroundGray lg:justify-between lg:px-[5rem] lg:py-[6.5rem] 2xl:px-[10rem] 2xl:py-[13rem]">
       <Head>
         <title>라디 - 최신 소식</title>
         <meta
@@ -251,9 +251,9 @@ export const SectionSeven = () => {
       <Image
         src={'/hello_ladi.gif'}
         alt="ladi 이미지 파일"
-        width={610}
-        height={820}
-        className="hidden md:flex md:flex-1"
+        width={305}
+        height={410}
+        className="hidden lg:flex lg:flex-1 2xl:h-[820px] 2xl:w-[610px]"
       />
       <FooterSeven />
     </section>
@@ -262,7 +262,7 @@ export const SectionSeven = () => {
 // section Eight
 export const SectionEight = () => {
   return (
-    <section className="my-6 flex flex-col gap-9 md:m-[10rem]">
+    <section className="my-6 flex flex-col gap-9 lg:m-[10rem]">
       <HeaderEight />
       <MainEight />
     </section>
@@ -271,7 +271,7 @@ export const SectionEight = () => {
 // Introduction
 export const EndIntroduction = () => {
   return (
-    <footer className="bg-[#383838] px-5 py-10 text-white md:p-[5rem] md:pb-[7rem]">
+    <footer className="bg-[#383838] px-5 py-10 text-white lg:p-[5rem] lg:pb-[7rem]">
       <IntroFooter />
     </footer>
   )

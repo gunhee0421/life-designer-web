@@ -66,9 +66,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <head>
-        <link rel="stylesheet" href="layout.css" />
-      </head>
       <body className={`${pretendard.variable} font-sans antialiased`}>
         {children}
       </body>
