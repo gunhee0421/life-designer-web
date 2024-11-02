@@ -1,5 +1,5 @@
 import Icon from './icons'
-import heroSection from '../../public/hero_section.webp'
+import heroSection from '../../public/hero_section.svg'
 import Image from 'next/image'
 import '../styles/phone.css'
 import CircularProgress from './CircularPrograss'

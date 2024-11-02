@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import introLadi from '../../public/intro_ladi.webp'
+import introLadi from '../../public/intro_ladi.svg'
 
 export const BetaTestCard = () => {
   return (
@@ -51,13 +51,13 @@ export const BetaTestCard = () => {
 }
 export const IntroLadiCard = () => {
   return (
-    <section className="flex h-[150px] w-[270px] flex-col gap-[5px] rounded shadow-cardMobile lg:h-[720px] lg:w-[1280px] lg:gap-6 lg:rounded-3xl lg:shadow-cardWeb">
+    <section className="flex h-[150px] w-[270px] flex-col gap-[5px] rounded shadow-cardMobile lg:gap-6 lg:rounded-3xl lg:shadow-cardWeb xl:h-[800px] xl:w-[1080px] 2xl:h-[720px] 2xl:w-[1280px]">
       <Image
         src={introLadi}
         alt="라디 소개 이미지"
         width={270}
         height={150}
-        className="w-full"
+        className="h-full w-full"
         loading="lazy"
       />
     </section>
