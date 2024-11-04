@@ -55,8 +55,11 @@ const pretendard = localFont({
 })
 
 export const metadata: Metadata = {
-  title: '라디',
-  description: '당신만의 루틴으로',
+  title: '라디: lifedesigner',
+  description: '라디와 함께 루틴을 만들고 관리해보세요.',
+  icons: {
+    icon: '/Icon.ico',
+  },
 }
 
 export default function RootLayout({

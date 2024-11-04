@@ -32,11 +32,18 @@ export const SectionOne = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <Head>
-        <title>라디 - 홈</title>
+        <title>라디 : LifeDesigner</title>
         <meta
           name="description"
+          content="라디와 함께 루틴을 만들고 관리해보세요. 라디에서 효과적인 계획을 세우세요."
+        />
+        <meta property="og:image" content="/hero_section.png" />
+        <meta property="og:title" content="라디 - LifeDesigner" />
+        <meta
+          property="og:description"
           content="라디와 함께 루틴을 만들고 관리해보세요."
         />
+        <meta property="og:url" content="https://lifedesigner.store" />
       </Head>
       <Header />
       <Main />
