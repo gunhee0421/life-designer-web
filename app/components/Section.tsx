@@ -32,7 +32,7 @@ export const SectionOne = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <Head>
-        <title>라디 : LifeDesigner</title>
+        <title>라디</title>
         <meta
           name="description"
           content="라디와 함께 루틴을 만들고 관리해보세요. 라디에서 효과적인 계획을 세우세요."
