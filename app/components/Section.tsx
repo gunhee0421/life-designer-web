@@ -32,7 +32,7 @@ export const SectionOne = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <Head>
-        <title>라디</title>
+        <title>라디: LifeDesigner</title>
         <meta
           name="description"
           content="라디와 함께 루틴을 만들고 관리해보세요. 라디에서 효과적인 계획을 세우세요."
@@ -53,7 +53,7 @@ export const SectionOne = () => {
 // section two
 export const SectionTwo = () => {
   return (
-    <section className="flex flex-col gap-6 bg-gray px-[2.7rem] py-[3.75rem] lg:flex-row lg:items-center lg:justify-between lg:p-[5rem] 2xl:px-[17.5rem] 2xl:py-[13rem]">
+    <section className="flex flex-col items-center justify-center gap-6 bg-gray py-[3.75rem] md:flex-row md:items-center md:justify-between md:px-[2.7rem] lg:p-[4rem] xl:px-[8rem] xl:py-[5.25rem] 2xl:px-[17.5rem] 2xl:py-[13rem]">
       <Head>
         <title>라디 - 루틴 생성</title>
         <meta
@@ -65,7 +65,14 @@ export const SectionTwo = () => {
         <HeaderTwo />
       </SectionAnimationContainer>
       <SectionAnimationContainer delay={100}>
-        <MainTwo />
+        <div className="relative mx-auto h-[505px] w-[280px] lg:h-[750px] lg:w-[375px] 2xl:h-[1036px] 2xl:w-[520px]">
+          <Image
+            src={'Main/MainTwo.svg'}
+            alt="루틴 생성 핸드폰 이미지"
+            fill
+            quality={100}
+          />
+        </div>
       </SectionAnimationContainer>
     </section>
   )
@@ -81,20 +88,34 @@ export const SectionThree = () => {
           content="라디와 함께 더욱 세부적인 루틴을 설정해보세요."
         />
       </Head>
-      <div className="flex flex-col gap-6 px-[2.7rem] py-[3.75rem] lg:hidden">
+      <div className="flex flex-col items-center justify-center gap-6 py-[3.75rem] md:hidden md:px-[2.7rem]">
         <SectionAnimationContainer>
           <HederThree />
         </SectionAnimationContainer>
         <SectionAnimationContainer delay={100}>
-          <MainThree />
+          <div className="relative mx-auto h-[505px] w-[270px]">
+            <Image
+              src={'Main/MainThree.svg'}
+              alt="세부 루틴 설정 핸드폰 이미지"
+              fill
+              quality={100}
+            />
+          </div>
         </SectionAnimationContainer>
         <SectionAnimationContainer delay={200}>
           <FooterThree />
         </SectionAnimationContainer>
       </div>
-      <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-between lg:p-[5rem] 2xl:px-[17.5rem] 2xl:py-[13rem]">
+      <div className="hidden md:flex md:flex-row md:items-center md:justify-between md:p-[2.7rem] lg:p-[4rem] xl:px-[8rem] xl:py-[5.25rem] 2xl:px-[17.5rem] 2xl:py-[13rem]">
         <SectionAnimationContainer>
-          <MainThree />
+          <div className="relative mx-auto h-[505px] w-[280px] lg:h-[750px] lg:w-[375px] 2xl:h-[1036px] 2xl:w-[520px]">
+            <Image
+              src={'Main/MainThree.svg'}
+              alt="세부 루틴 설정 핸드폰 이미지"
+              fill
+              quality={100}
+            />
+          </div>
         </SectionAnimationContainer>
         <section className="flex flex-col gap-[7.5rem]">
           <SectionAnimationContainer delay={100}>
@@ -111,7 +132,7 @@ export const SectionThree = () => {
 // section Four
 export const SectionFour = () => {
   return (
-    <section className="flex flex-col gap-6 bg-gray px-[2.7rem] py-[3.75rem] lg:flex-row lg:items-center lg:justify-between 2xl:px-[17.5rem] 2xl:py-[13rem]">
+    <section className="flex flex-col items-center justify-center gap-6 bg-gray py-[3.75rem] md:flex-row md:justify-between md:px-[2.7rem] lg:p-[4rem] xl:px-[8rem] xl:py-[5.25rem] 2xl:px-[17.5rem] 2xl:py-[13rem]">
       <Head>
         <title>라디 - 루틴 수행</title>
         <meta
@@ -123,7 +144,14 @@ export const SectionFour = () => {
         <HeaderFour />
       </SectionAnimationContainer>
       <SectionAnimationContainer delay={100}>
-        <MainFour />
+        <div className="relative mx-auto h-[560px] w-[280px] lg:h-[750px] lg:w-[375px] 2xl:h-[1036px] 2xl:w-[520px]">
+          <Image
+            src={'Main/MainFour.svg'}
+            alt="루틴 생성 핸드폰 이미지"
+            fill
+            quality={100}
+          />
+        </div>
       </SectionAnimationContainer>
     </section>
   )
@@ -134,25 +162,32 @@ export const SectionFive = () => {
 
   return (
     <section>
-      <div className="flex h-fit flex-col gap-6 px-[2.7rem] py-[3.75rem] lg:hidden">
+      <div className="flex h-fit flex-col items-center justify-between gap-6 py-[3.75rem] md:hidden md:px-[2.7rem]">
         <SectionAnimationContainer>
           <HeaderFive />
         </SectionAnimationContainer>
         <SectionAnimationContainer delay={100}>
-          <MainFive setShowSix={setShowSix} />
+          <div className="relative mx-auto h-[540px] w-[280px] lg:h-[750px] lg:w-[375px] 2xl:h-[1036px] 2xl:w-[520px]">
+            <Image
+              src={'Main/MainFive.svg'}
+              alt="세부 루틴 설정 핸드폰 이미지"
+              fill
+              quality={100}
+            />
+          </div>
         </SectionAnimationContainer>
         <SectionAnimationContainer delay={200}>
           <FooterFive />
         </SectionAnimationContainer>
       </div>
-      <div className="hidden h-fit gap-6 px-[2.7rem] py-[3.75rem] lg:flex lg:flex-row lg:items-center lg:justify-between 2xl:px-[17.5rem] 2xl:py-[13rem]">
-        <div className="flex h-full flex-1">
+      <div className="hidden h-fit items-center justify-between gap-6 py-[3.75rem] md:flex md:flex-row md:px-[2.7rem] lg:p-[4rem] xl:px-[8rem] xl:py-[5.25rem] 2xl:px-[17.5rem] 2xl:py-[13rem]">
+        <div className="flex flex-1 md:h-[1125px] lg:h-[1525px] 2xl:h-[2325px]">
           <SectionAnimationContainer threshold={0.1}>
             <MainFive setShowSix={setShowSix} />
           </SectionAnimationContainer>
         </div>
-        <div className="mb-[10rem] flex h-full flex-1 flex-col justify-between gap-[30rem]">
-          <div className="flex flex-col gap-[7.5rem]">
+        <div className="flex h-full flex-1 flex-col justify-between md:h-[1140px] md:py-[8rem] md:pb-[10rem] lg:h-[1350px] xl:py-0 2xl:h-[2146px] 2xl:py-[15rem]">
+          <div className="flex flex-col md:gap-[2rem] lg:gap-[4.25rem] 2xl:gap-[7.5rem]">
             <SectionAnimationContainer delay={100}>
               <HeaderFive />
             </SectionAnimationContainer>
@@ -160,7 +195,7 @@ export const SectionFive = () => {
               <FooterFive />
             </SectionAnimationContainer>
           </div>
-          <div className="flex flex-col gap-[7.5rem]">
+          <div className="flex flex-col md:gap-[2rem] lg:gap-[4.25rem] 2xl:gap-[7.5rem]">
             <SectionAnimationContainer delay={200}>
               <HeaderSix />
             </SectionAnimationContainer>
@@ -227,7 +262,7 @@ export const SectionFive = () => {
 // section Six(Mobile)
 export const SectionSix = () => {
   return (
-    <section className="flex flex-col gap-6 px-[2.7rem] py-[3.75rem] lg:hidden lg:flex-row lg:items-center lg:justify-between lg:px-[17.5rem] lg:py-[13rem]">
+    <section className="flex flex-col items-center justify-between gap-6 py-[3.75rem] md:hidden">
       <Head>
         <title>라디 - 루틴 보고서</title>
         <meta
@@ -239,7 +274,14 @@ export const SectionSix = () => {
         <HeaderSix />
       </SectionAnimationContainer>
       <SectionAnimationContainer delay={100}>
-        <MainSix />
+        <div className="relative mx-auto h-[560px] w-[280px] lg:h-[750px] lg:w-[375px] 2xl:h-[1036px] 2xl:w-[520px]">
+          <Image
+            src={'Main/MainSix.svg'}
+            alt="세부 루틴 설정 핸드폰 이미지"
+            fill
+            quality={100}
+          />
+        </div>
       </SectionAnimationContainer>
     </section>
   )
@@ -247,7 +289,7 @@ export const SectionSix = () => {
 // section Seven
 export const SectionSeven = () => {
   return (
-    <section className="flex items-center bg-backgroundGray lg:justify-between lg:px-[5rem] lg:py-[6.5rem] 2xl:px-[10rem] 2xl:py-[13rem]">
+    <section className="flex items-center justify-center bg-backgroundGray md:py-[2rem] lg:p-[4rem] lg:px-[5rem] 2xl:px-[10rem] 2xl:py-[13rem]">
       <Head>
         <title>라디 - 최신 소식</title>
         <meta
@@ -260,7 +302,7 @@ export const SectionSeven = () => {
         alt="ladi 이미지 파일"
         width={305}
         height={410}
-        className="hidden lg:flex lg:flex-1 2xl:h-[820px] 2xl:w-[610px]"
+        className="hidden md:flex lg:flex-1 2xl:h-[820px] 2xl:w-[610px]"
       />
       <FooterSeven />
     </section>

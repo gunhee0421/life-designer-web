@@ -8,12 +8,12 @@ const EmblaCarousel: React.FC = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true, align: 'center' })
 
   return (
-    <div className="w-full overflow-hidden" ref={emblaRef}>
-      <div className="flex">
-        <div className="relative mx-2 min-w-full flex-shrink-0 p-[2rem]">
+    <div className="overflow-hidden" ref={emblaRef}>
+      <div className="flex items-center justify-around">
+        <div className="mx-2 flex min-w-full flex-shrink-0 items-center justify-center p-[2rem]">
           <BetaTestCard />
         </div>
-        <div className="relative mx-2 min-w-full flex-shrink-0 p-[2rem]">
+        <div className="mx-2 flex min-w-full flex-shrink-0 items-center justify-center p-[2rem]">
           <IntroLadiCard />
         </div>
       </div>

@@ -12,6 +12,10 @@ const config: Config = {
         sans: ['var(--font-pretendard)', 'sans-serif'],
         notoSans: ['NotoSansKR', 'sans-serif'],
       },
+      fontWeight: {
+        regular: '400',
+        medium: '500',
+      },
       colors: {
         primary: '#1777E9',
         textPrimary: '#383A42',
