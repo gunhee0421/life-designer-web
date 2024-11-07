@@ -3,7 +3,7 @@ import introLadi from '../../public/intro_ladi.svg'
 
 export const BetaTestCard = () => {
   return (
-    <section className="flex h-[150px] w-[270px] flex-col gap-[5px] rounded px-[0.875rem] py-3 shadow-cardMobile lg:gap-6 lg:rounded-3xl lg:px-[4rem] lg:py-[3.5rem] lg:shadow-cardWeb xl:h-[800px] xl:w-[1080px] 2xl:h-[720px] 2xl:w-[1280px]">
+    <section className="md flex h-[150px] w-[270px] flex-col gap-[5px] rounded px-[0.875rem] py-3 shadow-cardMobile lg:gap-6 lg:rounded-3xl lg:px-[4rem] lg:py-[3.5rem] lg:shadow-cardWeb xl:h-[800px] xl:w-[1080px] 2xl:h-[720px] 2xl:w-[1280px]">
       <h1 className="text-[0.875rem] font-bold text-primary lg:text-6xl">
         라디 - 베타 테스트 오픈!
       </h1>
@@ -21,7 +21,7 @@ export const BetaTestCard = () => {
             loading="lazy"
           />
           <Image
-            src={'/study_ladi.gif'}
+            src={'/gif/study_ladi.gif'}
             alt="공부하는 라디"
             width={340}
             height={382}

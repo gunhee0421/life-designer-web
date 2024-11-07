@@ -91,8 +91,9 @@ export const IntroFooter = () => {
           <br />
           이메일: life.designer.dev@gmail.com
         </h2>
-        <h2 className="text-[0.625rem] underline">
-          서비스 이용약관 <br /> 개인정보 처리방침
+        <h2 className="flex flex-col gap-[10px] text-[0.625rem] font-regular underline">
+          <span>서비스 이용약관</span>
+          <span>개인정보 처리방침</span>
         </h2>
       </div>
     </footer>

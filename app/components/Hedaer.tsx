@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Icon from './icons'
-import ladi from '../../public/ladi.svg'
+import ladi from '../../public/ladi.webp'
 
 // sectionOne의 헤더
 export const Header = () => {
@@ -112,7 +112,7 @@ export const HeaderSix = () => {
 export const HeaderEight = () => {
   return (
     <header className="flex items-center justify-center">
-      <h1 className="text-xl font-bold lg:text-7xl">
+      <h1 className="lg text-xl font-bold md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl">
         라디의 최신 소식들을 알아보세요!
       </h1>
     </header>

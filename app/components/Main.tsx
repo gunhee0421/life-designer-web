@@ -1,5 +1,5 @@
 import Icon from './icons'
-import heroSection from '../../public/hero_section.svg'
+import heroSection from '../../public/hero_section.webp'
 import Image from 'next/image'
 import '../styles/phone.css'
 import CircularProgress from './CircularPrograss'
@@ -17,39 +17,46 @@ const calendar = [
 
 export const Main = () => {
   return (
-    <section className="flex h-full flex-col justify-between py-14 text-center lg:mx-20 lg:my-20 lg:text-left xl:mx-40 xl:my-40 xl:flex xl:min-h-[70vh]">
+    <section className="flex h-full flex-col justify-between py-14 text-center md:mx-20 md:my-20 md:text-left xl:mx-40 xl:my-40 xl:flex xl:min-h-[70vh]">
       <div className="flex flex-col">
         <header>
           <div className="mb-5">
-            <h1 className="text-2xl font-bold text-textPrimary lg:h-[2.75rem] lg:text-[2.5rem] xl:h-[3.75rem] xl:text-[3.5rem]">
+            <h1 className="text-2xl font-bold text-textPrimary md:text-4xl xl:h-[3.75rem] xl:text-[3.5rem]">
               당신만의 루틴으로
             </h1>
-            <h2 className="mb-2 text-2xl font-bold text-textPrimary lg:h-[2.75rem] lg:text-[2.5rem] xl:h-[3.75rem] xl:text-[3.5rem]">
+            <h2 className="mb-2 text-2xl font-bold text-textPrimary md:text-4xl xl:h-[3.75rem] xl:text-[3.5rem]">
               더 나은 삶을 디자인하세요
             </h2>
-            <p className="mt whitespace-nowrap text-xs font-medium text-textSecondary lg:h-[1.5rem] lg:text-[1.25rem] xl:mb-10 xl:mt-8 xl:h-[2.25rem] xl:text-[2rem]">
+            <p className="mt whitespace-nowrap text-xs font-medium text-textSecondary md:text-xl xl:mb-10 xl:mt-8 xl:h-[2.25rem] xl:text-[2rem]">
               라디와 함께 간편하게 목표를 설정하고 습관을 만들어보세요
             </p>
           </div>
         </header>
 
-        <nav className="mb-10 hidden flex-row gap-4 lg:flex">
+        <nav className="mb-10 hidden flex-row gap-4 md:flex">
           <a
-            className="inline-flex items-center gap-2 rounded-md bg-black px-4 py-2 text-start xl:w-48"
+            className="y-2 inline-flex items-center gap-2 rounded-md bg-black px-4 text-start xl:w-48"
             href="https://play.google.com/store/apps/details?id=dorun.com.life_designer_client&pcampaignid=web_share"
           >
-            <Icon name="playstore" size={32} />
+            <Icon name="playstore" size={16} className="lg:hidden" />
+            <Icon name="playstore" size={32} className="hidden lg:block" />
             <div className="text-white">
-              <p className="text-[16px] font-medium">Google Play</p>
+              <p className="text-[12px] font-medium lg:text-[16px]">
+                Google Play
+              </p>
             </div>
           </a>
           <a
             className="inline-flex items-center gap-2 rounded-md bg-black px-4 py-2 text-start xl:w-48"
             href="https://apps.apple.com/kr/app/%EB%9D%BC%EB%94%94-%EB%82%98%EB%A7%8C%EC%9D%98-life-designer/id6670728311"
           >
-            <Icon name="apple" size={32} />
+            <Icon name="apple" size={16} className="lg:hidden" />
+            <Icon name="apple" size={32} className="hidden lg:block" />
+
             <div className="text-white">
-              <p className="text-[16px] font-medium">App Store</p>
+              <p className="text-[12px] font-medium lg:text-[16px]">
+                App Store
+              </p>
             </div>
           </a>
         </nav>
@@ -61,13 +68,13 @@ export const Main = () => {
           width={251}
           height={175}
           alt="여자가 요가 앱을 사용하여 루틴을 관리하는 모습"
-          className="z-[-1] md:w-[50vw] lg:absolute lg:bottom-[10vh] lg:right-[10vw] lg:w-[50vw] xl:bottom-[15vh] xl:right-[5vw] xl:w-[40vw] 2xl:right-[5vw] 2xl:top-[30vh] 2xl:h-[671px] 2xl:w-[980px]"
+          className="z-[-1] md:absolute md:bottom-[10vh] md:right-[10vw] md:w-[50vw] lg:w-[50vw] xl:bottom-[15vh] xl:right-[5vw] xl:w-[40vw] 2xl:right-[5vw] 2xl:top-[30vh] 2xl:h-[671px] 2xl:w-[980px]"
           quality={100}
           priority
         />
       </div>
 
-      <nav className="inline-flex flex-col items-center justify-center gap-4 lg:hidden">
+      <nav className="inline-flex flex-col items-center justify-center gap-4 md:hidden">
         <a
           className="inline-flex w-24 items-center gap-2 rounded bg-black px-2 py-1 text-start"
           href="https://play.google.com/store/apps/details?id=dorun.com.life_designer_client&pcampaignid=web_share"
@@ -339,115 +346,6 @@ export const MainFive: React.FC<{
   setShowSix: React.Dispatch<React.SetStateAction<boolean>>
 }> = ({ setShowSix }) => {
   return (
-    // <section className="lg:scrollbar-hidden flex h-fit w-full flex-col rounded-[13.5px] border-[0.375rem] border-[#E5E5E5] py-6 font-notoSans lg:rounded-[26px] lg:border-[0.75rem] lg:scrollbar-hide">
-    //   <nav className="flex flex-col items-center justify-center">
-    //     <h1 className="mx-6 flex h-9 items-center text-xs font-semibold lg:h-16 lg:text-2xl">
-    //       통계
-    //     </h1>
-    //     <ol className="flex w-full flex-row items-center justify-around text-[0.625rem] lg:text-xl">
-    //       <li
-    //         className="flex flex-1 items-center justify-center py-2 font-bold text-primary lg:h-16"
-    //         style={{ borderBottom: '3px solid #1777E9' }}
-    //       >
-    //         기간별
-    //       </li>
-    //       <li className="flex flex-1 justify-center py-2">루틴별</li>
-    //     </ol>
-    //   </nav>
-    //   <section className="m-[1.125rem] flex flex-col gap-[1.125rem] lg:m-[2.125rem] lg:gap-9">
-    //     <h1 className="text-[0.9375rem] font-bold lg:text-3xl">
-    //       지금 까지 <span className="text-primary">연속 15일</span>동안
-    //       <br />
-    //       루틴을 100% 달성했어요
-    //     </h1>
-    //     <ol className="flex flex-col gap-[1.125rem] text-textPrimary">
-    //       <li className="flex justify-between text-[0.65625rem] lg:text-xl">
-    //         최고 연속 달성
-    //         <span className="text-[0.75rem] font-bold lg:text-2xl">21일</span>
-    //       </li>
-    //       <li className="flex justify-between text-[0.65625rem] lg:text-xl">
-    //         누적 달성{' '}
-    //         <span className="text-[0.75rem] font-bold lg:text-2xl">123일</span>
-    //       </li>
-    //     </ol>
-    //   </section>
-    //   <section className="m-[1.125rem] flex flex-col gap-[1.125rem] lg:gap-9">
-    //     <nav className="flex items-center justify-between">
-    //       <Icon name="arrowNavigate" size={22} className="lg:hidden" />
-    //       <Icon name="arrowNavigate" size={44} className="hidden lg:block" />
-    //       <div className="flex items-center justify-center gap-[0.125rem] text-[0.625rem] lg:text-xl">
-    //         <span className="flex items-center justify-center">2024.04</span>
-    //         <Icon name="chart" size={12} className="lg:hidden" />
-    //         <Icon name="chart" size={24} className="hidden lg:block" />
-    //       </div>
-    //       <Icon
-    //         name="phoneArrow"
-    //         size={12}
-    //         className="flex justify-end lg:hidden"
-    //       />
-    //       <Icon
-    //         name="phoneArrow"
-    //         size={24}
-    //         className="hidden lg:flex lg:justify-end"
-    //       />
-    //     </nav>
-    //     <section>
-    //       {calendar.map((week, i) => (
-    //         <ol key={i} className="flex gap-1">
-    //           {week.map((day, j) => (
-    //             <li
-    //               key={j}
-    //               className={`flex size-9 flex-1 items-center justify-center text-center lg:size-[4.375rem] ${
-    //                 day ? 'text-textPrimary' : 'text-textSecondary'
-    //               }`}
-    //             >
-    //               {day == null ? (
-    //                 ''
-    //               ) : day === 1 ? (
-    //                 <Icon name="check1" />
-    //               ) : day === 2 ? (
-    //                 <Icon name="check2" />
-    //               ) : day === 3 ? (
-    //                 <Icon name="check3" />
-    //               ) : (
-    //                 <span className="text-[0.5625rem] lg:text-[1.125rem]">
-    //                   {day}
-    //                 </span>
-    //               )}
-    //             </li>
-    //           ))}
-    //         </ol>
-    //       ))}
-    //     </section>
-    //   </section>
-    //   <hr className="h-[2px] border-none bg-[#e5e5e5] lg:h-1" />
-    //   <footer className="mx-[1.125rem] mt-[1.125rem] flex flex-row justify-between lg:my-9">
-    //     <p className="flex items-center justify-center text-[0.625rem] lg:text-xl">
-    //       22일 월요일{' '}
-    //       <span className="ml-4 mr-2 text-[0.75rem] font-bold text-primary lg:text-2xl">
-    //         완료1
-    //       </span>
-    //       <span className="text-[0.75rem] font-bold text-textPrimary lg:text-2xl">
-    //         실패2
-    //       </span>
-    //     </p>
-    //     <Icon name="arrowNavigate" size={22} className="rotate-180 lg:hidden" />
-    //     <Icon
-    //       name="arrowNavigate"
-    //       size={44}
-    //       className="hidden rotate-180 lg:block"
-    //     />
-    //   </footer>
-    //   <section className="hidden lg:flex lg:w-full">
-    //     <SectionAnimationLongContainer
-    //       delay={100}
-    //       threshold={0.1}
-    //       nextAnimation={setShowSix}
-    //     >
-    //       <MainSix />
-    //     </SectionAnimationLongContainer>
-    //   </section>
-    // </section>
     <section>
       <div className="relative mx-auto h-[900px] w-[280px] lg:h-[1200px] lg:w-[375px] 2xl:h-[2100px] 2xl:w-[520px]">
         <Image
@@ -609,14 +507,6 @@ export const MainSix = () => {
           </ol>
         </div>
       </section>
-    </section>
-  )
-}
-// sectionEight의 메인화면
-export const MainEight = () => {
-  return (
-    <section className="px-[0.75rem] 2xl:px-[11rem]">
-      <EmblaCarousel />
     </section>
   )
 }

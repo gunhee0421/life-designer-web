@@ -11,21 +11,14 @@ import {
   HeaderTwo,
   HederThree,
 } from './Hedaer'
-import {
-  Main,
-  MainEight,
-  MainFive,
-  MainFour,
-  MainSix,
-  MainThree,
-  MainTwo,
-} from './Main'
+import { Main, MainFive, MainFour, MainSix, MainThree, MainTwo } from './Main'
 import {
   SectionAnimationContainer,
   SectionAnimationLongContainer,
 } from './SectionAnimationContainer'
 import { useState } from 'react'
 import Head from 'next/head'
+import EmblaCarousel from './Carousel'
 
 // section one
 export const SectionOne = () => {
@@ -95,7 +88,7 @@ export const SectionThree = () => {
         <SectionAnimationContainer delay={100}>
           <div className="relative mx-auto h-[505px] w-[270px]">
             <Image
-              src={'Main/MainThree.svg'}
+              src={'/Main/MainThree.webp'}
               alt="세부 루틴 설정 핸드폰 이미지"
               fill
               quality={100}
@@ -110,7 +103,7 @@ export const SectionThree = () => {
         <SectionAnimationContainer>
           <div className="relative mx-auto h-[505px] w-[280px] lg:h-[750px] lg:w-[375px] 2xl:h-[1036px] 2xl:w-[520px]">
             <Image
-              src={'Main/MainThree.svg'}
+              src={'/Main/MainThree.webp'}
               alt="세부 루틴 설정 핸드폰 이미지"
               fill
               quality={100}
@@ -146,7 +139,7 @@ export const SectionFour = () => {
       <SectionAnimationContainer delay={100}>
         <div className="relative mx-auto h-[560px] w-[280px] lg:h-[750px] lg:w-[375px] 2xl:h-[1036px] 2xl:w-[520px]">
           <Image
-            src={'Main/MainFour.svg'}
+            src={'/Main/MainFour.webp'}
             alt="루틴 생성 핸드폰 이미지"
             fill
             quality={100}
@@ -298,7 +291,7 @@ export const SectionSeven = () => {
         />
       </Head>
       <Image
-        src={'/hello_ladi.gif'}
+        src={'/gif/hello_ladi.gif'}
         alt="ladi 이미지 파일"
         width={305}
         height={410}
@@ -311,9 +304,9 @@ export const SectionSeven = () => {
 // section Eight
 export const SectionEight = () => {
   return (
-    <section className="my-6 flex flex-col gap-9 lg:m-[10rem]">
+    <section className="mx-11 my-6 flex flex-col justify-center gap-9 md:mt-14 lg:m-[10rem] lg:gap-0 xl:gap-20">
       <HeaderEight />
-      <MainEight />
+      <EmblaCarousel />
     </section>
   )
 }
