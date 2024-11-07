@@ -20,7 +20,7 @@ import EmblaCarousel from './Carousel'
 // section one
 export const SectionOne = () => {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex h-screen flex-col">
       <Head>
         <title>라디 - 라이프디자인, 루틴 관리 앱</title>
         <meta
@@ -283,7 +283,7 @@ export const SectionSix = () => {
 // section Seven
 export const SectionSeven = () => {
   return (
-    <section className="flex items-center justify-center bg-backgroundGray md:py-[2rem] lg:p-[4rem] lg:px-[5rem] 2xl:px-[10rem] 2xl:py-[13rem]">
+    <section className="flex flex-1 items-center justify-center bg-backgroundGray md:py-[2rem] lg:p-[4rem] lg:px-[5rem] 2xl:px-[10rem] 2xl:py-[13rem]">
       <Head>
         <title>라디 - 최신 소식</title>
         <meta

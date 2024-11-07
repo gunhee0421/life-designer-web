@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Icon from './icons'
-import ladi from '../../public/ladi.webp'
+import ladi from '../../public/ladi.svg'
 
 // sectionOne의 헤더
 export const Header = () => {
