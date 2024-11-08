@@ -55,7 +55,7 @@ import './globals.css'
 // })
 
 export const metadata: Metadata = {
-  title: '나만의 LifeDesigner: 라디',
+  title: '나만의 라이프디자이너: 라디',
   description: '라디와 함께 더 나은 삶을 디자인하세요!',
   icons: {
     icon: '/Icon.ico',
