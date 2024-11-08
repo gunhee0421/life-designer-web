@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-pretendard)', 'sans-serif'],
+        sans: ['Pretendard', 'sans-serif'],
         notoSans: ['NotoSansKR', 'sans-serif'],
       },
       fontWeight: {
