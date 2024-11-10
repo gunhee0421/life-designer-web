@@ -70,7 +70,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <link rel="preload" href="/hero_section_copy.svg" as="image" />
-      <body className={`font-sans antialiased`}>{children}</body>
+      <body className={`bg-white font-sans text-black antialiased`}>
+        {children}
+      </body>
     </html>
   )
 }
