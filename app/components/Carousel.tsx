@@ -35,7 +35,7 @@ const EmblaCarousel: React.FC = () => {
         /> */}
         <iframe
           // src="https://www.youtube.com/watch?v=QnA4Azg5qxw"
-          src="https://www.youtube.com/embed/QnA4Azg5qxw?autoplay=1&mute=1"
+          src="https://www.youtube.com/embed/QnA4Azg5qxw"
           allow="autoplay; encrypted-media"
           allowFullScreen
           className="absolute inset-0 h-full w-full object-contain"
