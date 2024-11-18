@@ -26,15 +26,7 @@ const EmblaCarousel: React.FC = () => {
         />
       </div>
       <div className="relative h-[150px] w-[270px] md:h-[500px] lg:h-[800px] 2xl:px-[160px] 2xl:py-[71px]">
-        {/* <Image
-          src={'/intro_ladi.webp'}
-          alt="세부 루틴 설정 핸드폰 이미지"
-          fill
-          quality={100}
-          style={{ objectFit: 'contain' }}
-        /> */}
         <iframe
-          // src="https://www.youtube.com/watch?v=QnA4Azg5qxw"
           src="https://www.youtube.com/embed/QnA4Azg5qxw"
           allow="autoplay; encrypted-media"
           allowFullScreen

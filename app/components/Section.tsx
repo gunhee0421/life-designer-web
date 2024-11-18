@@ -188,60 +188,6 @@ export const SectionFive = () => {
     </section>
   )
 }
-
-// section Five Animation Test
-// export const SectionFive = () => {
-//   const [showSix, setShowSix] = useState(false)
-
-//   return (
-//     <section>
-//       <Head>
-//         <title>라디 - 루틴 통계</title>
-//         <meta
-//           name="description"
-//           content="라디가 제공하는 루틴 수행 통계를 확인해보세요."
-//         />
-//       </Head>
-//       <div className="flex h-fit flex-col gap-6 px-[2.7rem] py-[3.75rem] lg:hidden lg:flex-row lg:items-center lg:justify-between lg:px-[17.5rem] lg:py-[13rem]">
-//         <SectionAnimationContainer>
-//           <HeaderFive />
-//         </SectionAnimationContainer>
-//         <SectionAnimationContainer delay={100}>
-//           <MainFive setShowSix={setShowSix} />
-//         </SectionAnimationContainer>
-//         <SectionAnimationContainer delay={200}>
-//           <FooterFive />
-//         </SectionAnimationContainer>
-//       </div>
-//       <div className="hidden h-fit gap-6 px-[2.7rem] py-[3.75rem] lg:flex lg:flex-row lg:items-center lg:justify-between lg:px-[17.5rem] lg:py-[13rem]">
-//         <div className="flex h-full flex-1">
-//           <SectionAnimationContainer threshold={0.1}>
-//             <MainFive setShowSix={setShowSix} />
-//           </SectionAnimationContainer>
-//         </div>
-//         <div className="mb-[10rem] flex h-full flex-1 flex-col justify-between">
-//           {!showSix && (
-//             <div className="flex flex-col gap-[7.5rem]">
-//               <SectionAnimationLongContainer delay={100}>
-//                 <HeaderFive />
-//               </SectionAnimationLongContainer>
-//               <SectionAnimationLongContainer delay={200}>
-//                 <FooterFive />
-//               </SectionAnimationLongContainer>
-//             </div>
-//           )}
-//           <div className="flex flex-col gap-[7.5rem]">
-//             {showSix && (
-//               <SectionAnimationLongContainer delay={200}>
-//                 <HeaderSix />
-//               </SectionAnimationLongContainer>
-//             )}
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
 // section Six(Mobile)
 export const SectionSix = () => {
   return (
@@ -285,7 +231,7 @@ export const SectionSeven = () => {
         alt="ladi 이미지 파일"
         width={305}
         height={410}
-        className="hidden md:flex lg:flex-1 2xl:h-[820px] 2xl:w-[610px]"
+        className="hidden md:flex lg:flex-1 2xl:h-[821px] 2xl:w-[821px] 2xl:flex-none"
       />
       <FooterSeven />
     </section>
