@@ -11,6 +11,7 @@
 - IntersectionObserver를 이용한 화면 인터렉션 적용
 - aws ec2로 배포, nginx로 포트포워딩, docker로 컨테이너 관리
 - 도메인 연결 및 https 인증 설정
+- 웹 링크: https://life-designer-web-omega.vercel.app/
   
 ![Image](https://github.com/user-attachments/assets/2cc822ae-f992-49a3-8a4e-6379ba9469af)
 
